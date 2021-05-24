@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peminjaman</title>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Perpustakaan Merdeka</a></li>
+        <li style="float:right"><a href="pinjam.html">Peminjaman</a></li>
+    </ul>
+
+    <div class="wrapper">
+        <div class="container user-input">
+            <h2 class="header text-center">Transaksi Peminjaman</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-input">
+                    <label for="nama">Nama Peminjam</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group form-input">
+                    <label for="code">Kode Buku</label>
+                    <input type="text" id="code" name="code" required>
+                </div>
+                <div class="form-group form-input">
+                    <label for="date">Tanggal buku dipinjam</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group form-input">
+                    <label for="date1">Tanggal buku dikembalikan</label>
+                    <input type="date" id="date1" name="date1" required>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 class="judul">Yang sedang dipinjam</h2>
+            <div class="list-item" id="item">
+                
+            </div>
+            <p>Total buku yang dipinjam: </p>
+        </div>
+    </div>
+</body>
+
+</html>
