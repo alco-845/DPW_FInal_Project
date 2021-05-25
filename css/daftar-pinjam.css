@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
 
 * {
+    box-sizing: border-box;
     font-family: 'Padauk', sans-serif;
 }
 
@@ -21,7 +22,6 @@ a{
 	color: white;
 	text-decoration: none;
 }
-
 .sub-direct{
 	float: right;
 	margin-right: 20px;
@@ -42,7 +42,7 @@ body {
 
 
 .wrapper {
-	/*margin-top: 100px;*/
+	margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,65 +57,59 @@ body {
 }
 
 
-.form {
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
+
+.item {
     border-radius: 16px;
-}
-
-.form-group {
+    margin-top: 16px;
+    padding: 0px 15px;
+    background: white;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ff6701;
 }
 
-.form-group label {
-    margin-bottom: 4px;
-    font-size: 15px;
+.inner h2 {
+    
 }
+
+.inner p {
+    margin-top: 5px;
+}
+
 
 .bayang {
     box-shadow: 0 0px 10px 1px rgba(154, 160, 185, 0.4);
 }
 
-input {
-    background: white;
-    font-size: 17px;
-    border: 2px solid #ff6701;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    padding: 10px;
+img{
+    height: 130px;
 }
 
-.btn-submit {
-    border: none;
-    border-radius: 6px;
-    padding: 7px 15px;
-    border:2px solid #5F30E2;
-    color: black;
-    font-size: 17px;
-    margin-top: 20px;
+.item h2,h4{
+    margin-left: 20px;
+}
+
+.check-button {
+    background-color: transparent;
     cursor: pointer;
+    border: none;
+    transition: 0.3s;
 }
 
-.btn-submit:hover{
-    transition: 0.4s;
-    background: #5F30E2;
-    color: white;
+.check-button:hover {
+    transform: scale(1.4);
 }
 
-input:focus{
-    outline: none;
+.trash-button{
+    
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
 }
-
-/*input['date'] {
-    margin-top: 20px;
-}*/
-
-.text-center {
-    text-align: center;
-}
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -128,8 +122,9 @@ input:focus{
     .wrapper .container {
         width: 100%;
     }
-    .form {
-        width: 100%;
+
+    .list-item {
+        width: 90%;
     }
 
 }
