@@ -3,17 +3,29 @@
 
 <head>
     <title>Peminjaman</title>
+    <link rel="stylesheet" type="text/css" href="pinjam.css">
 </head>
 
 <body>
-    <ul>
-        <li><a class="active" href="index.html">Perpustakaan Merdeka</a></li>
-        <li style="float:right"><a href="pinjam.html">Peminjaman</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li id="brand"><a href="index.html"> Perpustakaan Merdeka</a></li>
+            <li id="active" class="sub-direct">Peminjaman
+            </li>
+            <li class="sub-direct"> <a href="buku_pinjam.html">
+                Buku dipinjam
+            </a>
+            </li>
+            <li class="sub-direct"> <a href="buku_kembali.html">
+                Buku dikembalikan
+            </a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="wrapper">
-        <div class="container user-input">
-            <h2 class="header text-center">Transaksi Peminjaman</h2>
+        <div class="container bayang user-input">
+            <h2 class="header text-center">Peminjaman Buku</h2>
             <form class="form" action="#" id="form">
                 <div class="form-group form-input">
                     <label for="nama">Nama Peminjam</label>
@@ -33,14 +45,6 @@
                 </div>
                 <input type="submit" value="Submit" name="Submit" class="btn-submit">
             </form>
-        </div>
-
-        <div class="container">
-            <h2 class="judul">Yang sedang dipinjam</h2>
-            <div class="list-item" id="item">
-                
-            </div>
-            <p>Total buku yang dipinjam: </p>
         </div>
     </div>
 </body>

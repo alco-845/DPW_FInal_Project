@@ -3,22 +3,66 @@
 
 <head>
     <title>Perpustakaan</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-    <ul>
-        <li><a class="active" href="index.html">Perpustakaan Merdeka</a></li>
-        <li style="float:right"><a href="pinjam.html">Peminjaman</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li id="active">
+                Perpustakaan Merdeka
+            </li>
+            <li class="sub-direct"> 
+                <a href="pinjam.html">Peminjaman</a>
+            </li>
+            <li class="sub-direct">
+                <a href="buku_pinjam.html">
+                Buku dipinjam
+                </a>
+            </li>
+            <li class="sub-direct"> 
+                <a href="buku_kembali.html">Buku dikembalikan</a>
+            </li>
+        </ul>
+    </nav>
 
-    <h1 align="center" style="color: #ff6701;">SELAMAT DATANG</h1>
+    <div class="jumbotron">
+        <img src="assets/jumbotron.jpg">
+        <h2>Selamat datang di <br> Perpustakaan Merdeka</h2>
+        <div class="garis">
+        </div>
+        <h4>Jl. Raya Telang, Perumahan Telang Inda, Telang, Kamal, Kabupaten Bangkalan, Jawa Timur 69162</h4>
+    </div>
+
+
+    <h1 align="center" style="color: #ff6701;">DAFTAR BUKU</h1>
 
     <table align="center" cellspacing="" cellpadding="25">
         <tr>
-            <td><img src="buku/KOMPUTER_GRAFIS.jpg" alt="1" width="200" height="auto"><br><a href="#" style="color: #ff6701;">Komputer Grafis</a></td>
-            <td><img src="buku/membangun_aplikasi.jpg" alt="1" width="200" height="auto"><br><a href="#" style="color: #ff6701;">Membangun Aplikasi</a></td>
-            <td><img src="buku/menguasai_pemrograman.jpg" alt="1" width="200" height="auto"><br><a href="#" style="color: #ff6701;">Menguasai Pemrograman</a></td>
-            <td><img src="buku/MICROSOFT_EXCEL_2019_UNTUK_PEMULA.jpg" alt="1" width="200" height="auto"><br><a href="#" style="color: #ff6701;">Microsoft Excel</a></td>
+            <td>
+                <div class="item bayang">
+                    <img src="assets/komputer-grafis.jpg" alt="1" width="200" height="auto">
+                    <a href="#" >Komputer Grafis</a>
+                </div>
+            </td>
+            <td>
+                <div class="item bayang">
+                    <img src="assets/membangun-aplikasi.jpg" alt="1" width="200" height="auto">
+                    <a href="#" >Membangun Aplikasi</a>
+                </div>
+            </td>
+            <td>
+                <div class="item bayang">
+                    <img src="assets/menguasai-pemrograman.jpg" alt="1" width="200" height="auto">
+                    <a href="#" >Menguasai Pemrograman</a>
+                </div>
+            </td>
+            <td>
+                <div class="item bayang">
+                    <img src="assets/excel.jpg" alt="1" width="200" height="auto">
+                    <a href="#" >Microsoft Excel</a>
+                </div>
+            </td>
         </tr>
     </table>
 </body>

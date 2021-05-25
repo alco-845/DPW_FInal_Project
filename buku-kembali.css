@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Padauk', sans-serif;
+}
+
+nav{
+	background-color: #ff6701;
+	height: 65px;
+	padding: 1px;
+	font-size: 20px;
+	/*margin: 0;*/
+}
+ul{
+	/*align-items: center;*/
+	list-style: none;
+	margin-left: -20px;
+	/*text-decoration: none;*/
+}
+li{
+	/*margin: 0;*/
+	display: inline;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+#brand{
+	/*margin-top: -10px;*/
+	/*font-size: 30px;*/
+}
+/*#head-pinjam{
+	float: right;
+}*/
+.sub-direct{
+	float: right;
+	margin-right: 20px;
+}
+
+#active{
+	color: black;
+}
+
+a:hover{
+	transition: 0.4s;
+	color: black;
+}
+html,
+body {
+    margin: 0;
+}
+
+
+.wrapper {
+	margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 60%;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    /*flex-grow: 1;*/
+    /*height: fit-contain;*/
+
+}
+
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 0px 15px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff6701;
+}
+
+.inner h2 {
+    /*margin-bottom: unset;*/
+}
+
+.inner p {
+    margin-top: 5px;
+}
+
+
+.bayang {
+    box-shadow: 0 0px 10px 1px rgba(154, 160, 185, 0.4);
+}
+
+img{
+    height: 130px;
+}
+
+.item h2,h4{
+    margin-left: 20px;
+}
+
+
+.trash-button{
+    /*background: url('../assets/trash-outline.svg');*/
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    /*float: right;*/
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    /*background: url('../assets/trash-fill.svg');*/
+    /*background-size: contain;*/
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+    li,a{
+        font-size: 17px;
+    }
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+}
