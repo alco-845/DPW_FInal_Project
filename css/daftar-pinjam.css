@@ -66,16 +66,6 @@ body {
     display: flex;
     align-items: center;
     border: 2px solid #ff6701;
-    transition: ease-in-out 0.2s;
-}
-
-.item:hover{
-    transform: scale(1.02);
-    transition: ease-in-out 0.2s;
-}
-
-.inner h2 {
-    
 }
 
 .inner p {
@@ -96,14 +86,18 @@ img{
 }
 
 .check-button {
-    background-color: transparent;
+    background: url('../assets/icon/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
     cursor: pointer;
     border: none;
-    transition: 0.3s;
 }
 
 .check-button:hover {
-    transform: scale(1.4);
+    background: url('../assets/icon/check-solid.svg');
+    background-size: contain;
 }
 
 .trash-button{
@@ -115,6 +109,10 @@ img{
     margin-left: auto;
     cursor: pointer;
     border: none;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
 }
 
 

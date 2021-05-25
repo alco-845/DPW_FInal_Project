@@ -40,6 +40,10 @@ a:hover{
 	transition: 0.4s;
 }
 
+p {
+	padding-left: 25px;
+}
+
 .jumbotron{
 	width: 100%;
 	/*background-color: black;*/

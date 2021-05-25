@@ -12,18 +12,14 @@
     <nav>
         <ul>
             <li id="brand"><a href="index.html"> Perpustakaan Merdeka</a></li>
-            <li class="sub-direct"> 
-                <a href="pinjam.html">
-                    Peminjaman
-                </a>
+            <li class="sub-direct"> <a href="pinjam.html">Peminjaman
+            </a>
             </li>
-            <li class="sub-direct">
-                <a href="buku_pinjam.html">
+            <li class="sub-direct"><a href="buku_pinjam.html">
                 Buku dipinjam
-                </a>
-            </li>
+            </a></li>
             <li id="active" class="sub-direct"> 
-                Buku dikembalikan
+                Buku dikembalikan            
             </li>
         </ul>
     </nav>
@@ -31,31 +27,16 @@
     <div class="wrapper">
         <div class="container bayang">
             <h2 align="center">Buku sudah dikembalikan</h2>
-            <div class="list-item" id="todos">
-
-                <!-- output js -->
-                <div class="item bayang">
-                    <img src="assets/excel.jpg">
-                    <div class="inner"> 
-                        <h2>
-                            Judul buku
-                            <!-- Nama buku -->
-                        </h2>
-                        <h4>Nama peminjam: </h4>
-                        <h4 class="textstamp">
-                        Dipijam tgl,bulan,tahun//value input id="date", pukul : ///date.toLocaleTimeString() saat submit di tekan<!-- Catatan waktu -->
-                            
-                        </h4>
-                        <h4 class="textBack">
-                        Telah dikembalikan pada: ///button check.value.time
-                        </h4>
-                </div>
-            </div>
-            <p>Total buku yang dikembalikan: //localStorage </p>
+            <div class="list-item" id="todos"></div>
+            <p id="totalBack">Total buku yang dikembalikan : 0 </p>
             </div>
         </div>
     </div>
-
+    <script src="js/script.js"></script>
+    <script>
+        init();
+        showBackBook();
+    </script>
 </body>
 
 </html>

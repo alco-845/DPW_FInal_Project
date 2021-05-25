@@ -28,33 +28,16 @@
     <div class="wrapper">
         <div class="container bayang">
             <h2 align="center">Buku sedang dipinjam</h2>
-            <div class="list-item" id="todos">
-
-                <!-- output js -->
-                <div class="item bayang">
-                <img src="assets/excel.jpg">
-
-                    <div class="inner"> 
-                        <h2>
-                            Judul buku
-                            <!-- Nama buku -->
-                        </h2>
-                        <h4>Nama peminjam: </h4>
-                        <h4 class="textstamp">
-                        Dipijam tgl,bulan,tahun//value input id="date", pukul : ///date.toLocaleTimeString() saat submit di tekan<!-- Catatan waktu -->
-                            
-                        </h4>
-                        <h4 class="textBack">
-                        Akan dikembalikan pada ///value input id="date1"
-                        </h4>
-                </div>
-            <button class="check-button"><i style="font-size:24px" class="fa">&#xf14a;</i></button>
-            </div>
-            <p>Total buku yang dipinjam: //localStorage </p>
+            <div class="list-item" id="todos"></div>
+            <p id="totalBorrowed">Total buku yang dipinjam : 0</p>
             </div>
         </div>
     </div>
-
+    <script src="js/script.js"></script>
+    <script>
+        init();
+        showBorrowedBook();
+    </script>
 </body>
 
 </html>

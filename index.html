@@ -27,7 +27,7 @@
     </nav>
 
     <div class="jumbotron">
-        <img src="assets/jumbotron.jpg">
+        <img src="assets/img/jumbotron.jpg">
         <h2>Selamat datang di <br> Perpustakaan Merdeka</h2>
         <div class="garis">
         </div>
@@ -41,30 +41,45 @@
         <tr>
             <td>
                 <div class="item bayang">
-                    <img src="assets/komputer-grafis.jpg" alt="1" width="200" height="auto">
-                    <a href="#" >Komputer Grafis</a>
+                    <img src="assets/img/komputer-grafis.jpg" alt="1" width="200" height="auto">
+                    <center><a href="">Komputer Grafis</a></center>
+                    <p id="grafisDesc">Jumlah buku : 0</p>
                 </div>
             </td>
             <td>
                 <div class="item bayang">
-                    <img src="assets/membangun-aplikasi.jpg" alt="1" width="200" height="auto">
-                    <a href="#" >Membangun Aplikasi</a>
+                    <img src="assets/img/membangun-aplikasi.jpg" alt="1" width="200" height="auto">
+                    <center><a href="">Membangun Aplikasi</a></center>
+                    <p id="aplikasiDesc">Jumlah buku : 0</p>
                 </div>
             </td>
             <td>
                 <div class="item bayang">
-                    <img src="assets/menguasai-pemrograman.jpg" alt="1" width="200" height="auto">
-                    <a href="#" >Menguasai Pemrograman</a>
+                    <img src="assets/img/menguasai-pemrograman.jpg" alt="1" width="200" height="auto">
+                    <center><a href="">Menguasai Pemrograman</a></center>
+                    <p id="programDesc">Jumlah buku : 0</p>
                 </div>
             </td>
             <td>
                 <div class="item bayang">
-                    <img src="assets/excel.jpg" alt="1" width="200" height="auto">
-                    <a href="#" >Microsoft Excel</a>
+                    <img src="assets/img/excel.jpg" alt="1" width="200" height="auto">
+                    <center><a href="">Microsoft Excel</a></center>
+                    <p id="excelDesc">Jumlah buku : 0</p>
                 </div>
             </td>
         </tr>
     </table>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            init();
+            
+            document.getElementById("grafisDesc").innerText = "Kode buku : " + book[0].code + "\nStatus buku : " + book[0].status;
+            document.getElementById("aplikasiDesc").innerText = "Kode buku : " + book[1].code + "\nStatus buku : " + book[1].status;
+            document.getElementById("programDesc").innerText = "Kode buku : " + book[2].code + "\nStatus buku : " + book[2].status;
+            document.getElementById("excelDesc").innerText = "Kode buku : " + book[3].code + "\nStatus buku : " + book[3].status;
+        });
+    </script>
 </body>
 
 </html>
