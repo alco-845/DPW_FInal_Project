@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+* {
+    font-family: 'Padauk', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav{
+	background-color: #ff6701;
+	height: 65px;
+	padding: 1px;
+	font-size: 20px;
+}
+ul{
+	list-style: none;
+	margin-left: -20px;
+}
+li{
+	display: inline;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.sub-direct{
+	float: right;
+	margin-right: 20px;
+}
+
+#active{
+	color: black;
+}
+
+a:hover{
+	color: black;
+	transition: 0.4s;
+}
+
+p {
+	padding-left: 25px;
+}
+
+.jumbotron{
+	width: 100%;
+	/*background-color: black;*/
+	position: relative;
+	color: white;
+}
+
+.jumbotron img{
+	width: 100%;
+}
+
+.jumbotron h2{
+	font-size: 40px;
+	position: absolute;
+	top:60px;
+	left: 490px;
+	text-align: center;
+}
+
+.jumbotron .garis{
+	background-color: white;
+	position: absolute;
+	top: 220px;
+	left: 490px;
+	width: 375px;
+	height: 5px;
+
+}
+.jumbotron h4{
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	left: 490px;
+	width: 375px;
+}
+.item{
+	background:#F8F9FA;
+	width: 250px;
+	padding-top: 20px;
+	border-radius: 10px;
+	padding-bottom: 15px;
+	/*transform: scale(1.0);*/	
+	transition: ease-in-out 0.3s;
+}
+.item:hover{
+	cursor: pointer;
+}
+.item img,.item a{
+
+	margin-left: 25px;
+}
+.item a{
+	color: black;
+	font-weight: bold;
+}
+.bayang {
+    box-shadow: 0 0px 10px 1px rgba(154, 160, 185, 0.4);
+}
+
+.item:hover{
+	transform: scale(1.06);
+	transition: ease-in-out 0.4s;
+}
