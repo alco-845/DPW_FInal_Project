@@ -66,6 +66,12 @@ body {
     display: flex;
     align-items: center;
     border: 2px solid #ff6701;
+    transition: ease-in-out 0.2s;
+}
+
+.item:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.2s;
 }
 
 .inner h2 {
