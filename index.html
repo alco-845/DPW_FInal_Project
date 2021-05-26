@@ -27,11 +27,7 @@
     </nav>
 
     <div class="jumbotron">
-        <img src="assets/img/jumbotron.jpg">
-        <h2>Selamat datang di <br> Perpustakaan Merdeka</h2>
-        <div class="garis">
-        </div>
-        <h4>Jl. Raya Telang, Perumahan Telang Inda, Telang, Kamal, Kabupaten Bangkalan, Jawa Timur 69162</h4>
+        <img src="assets/img/jumbotron-vector.jpg">
     </div>
 
 
@@ -143,6 +139,15 @@
             document.getElementById("programDesc").innerText = "Kode buku : " + book[2].code + "\nStatus buku : " + book[2].status;
             document.getElementById("excelDesc").innerText = "Kode buku : " + book[3].code + "\nStatus buku : " + book[3].status;
         });
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 20) {
+            document.querySelector("nav").style.top = "0";
+            } else {
+            document.querySelector("nav").style.top = "-70px";
+            }
+        }
     </script>
 </body>
 
