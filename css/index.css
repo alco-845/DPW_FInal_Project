@@ -4,6 +4,10 @@
     font-family: 'Padauk', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
     margin: 0;
 }
@@ -13,6 +17,12 @@ nav{
 	height: 65px;
 	padding: 1px;
 	font-size: 20px;
+	position: fixed;
+	top: -70px;
+	/*display: block;*/
+	z-index: 9999;
+	width: 100%;
+	transition: 0.3s;
 }
 ul{
 	list-style: none;
@@ -48,7 +58,7 @@ p {
 	width: 100%;
 	/*background-color: black;*/
 	position: relative;
-	color: white;
+	color: black;
 }
 
 .jumbotron img{
@@ -91,7 +101,7 @@ p {
 .item:hover{
 	cursor: pointer;
 }
-.item img,.item a{
+.item img{
 
 	margin-left: 25px;
 }
@@ -106,4 +116,11 @@ p {
 .item:hover{
 	transform: scale(1.06);
 	transition: ease-in-out 0.4s;
+}
+
+footer{
+	margin-top: 150px;
+	height: 100px;
+	width: 100%;
+	visibility: hidden;
 }
