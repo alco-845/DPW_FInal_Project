@@ -9,6 +9,8 @@ h1{
 	font-family: 'Pacifico', cursive;
 	font-size: 50px;
 	word-spacing: 5px;
+	color: #b00023;
+  	text-shadow: 0 0 5px #FF0000;
 }
 
 #back{
@@ -24,7 +26,7 @@ button{
 	display: inherit;
 	/*flex-direction: column;*/
 	border: none;
-	background: #343f56;
+	background: #b00023;
 	color: white;
 	border-radius: 5px;
 	padding: 7px 12px;
@@ -54,10 +56,10 @@ button:hover{
 .modal-content {
 	position: relative;
   color: white;
-  background: #343f56;
+  background: #b00023;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #FF0000;
   width: 80%;
 }
 
