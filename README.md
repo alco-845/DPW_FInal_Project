@@ -1,8 +1,11 @@
 Objective :
-Target dari web sederhana ini ditunjukan untuk perpustakawan. Tidak efisiennya pencatatan peminjaman buku di perpustakaan secara tradisional yaitu menulis, menyebabkan tidak sedikitnya human error. Sehingga banyak buku yang tidak tercatat hingga hilang. Dengan web sederhana kami, pencatatan buku dipinjam atau dikembalikan (keluar-masuk) akan lebih tertata dan mudah dipahami. Diharapkan memudahkan pustakawan dalam mencatat keluar-masuk buku dan perpustakaan terhindar dari kerugian.
+Web ini menceritakan cerita rakyat dengan judul si pitung. Target dari web sederhana ini ditunjukan untuk mengenalkan cerita rakyat si pitung. Beberapa orang mungkin pernah mendengar cerita si pitung namun tidak sedikit pula yang belum pernah mendengarnya. Diharapkan dapat menyadarkan kembali kepada orang orang jika cerita rakyat harus dilestarikan.
 
-Requirement Analysis : -
+Requirement Analysis :
+- Background music
+- Image
+- Image slider
+- Modal
 
 Design :
-
-
+- CSS
